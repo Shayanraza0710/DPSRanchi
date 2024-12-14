@@ -1,0 +1,841 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delhi Public School- Ranchi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            animation: fadeIn 1s ease-in;
+        }
+
+   
+
+            #header {
+            text-align: center;
+            padding: 30px;
+            background-color: #4CAF50; 
+            color: white;  
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+        
+
+h1 {
+    margin: 0;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #dfffd9; 
+}
+
+section {
+    padding: 40px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    animation: slideIn 0.5s ease;
+}
+
+h2 {
+    color: #4CAF50;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049; 
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.events-container, .activities-container, .gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.event, .activity, .gallery-item {
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+    width: 200px;
+}
+
+.event:hover, .activity:hover, .gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.event img, .activity img, .gallery-item img {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+}
+
+#contact ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#contact ul li {
+    margin: 5px 0;
+}
+
+#mamchange {
+    color: aliceblue;
+    text-decoration: underline; 
+}
+
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #ffffff;
+            color: #000000;
+            border: 1px solid #000000;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+        }
+
+        button:hover {
+            background-color: #eeeeee;
+        }
+
+        #mail {
+            color: white;
+            text-decoration: underline;
+            text-align: left;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px;
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+       
+.header-content {
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  
+}
+
+/* Styling the logo */
+.school-logo {
+  width: 100px; /* Adjust size as needed */
+  height: 100px;
+  margin-left: 15px; /* Space between the text and logo */
+}
+
+#nav-menu {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  
+}
+
+#nav-menu li {
+  margin: 0 10px;
+  
+}
+
+#nav-menu a {
+  text-decoration: none;
+  color: black;
+  
+}
+
+       
+
+
+
+        label {
+            font-size: 1.2em;
+            display: block;
+            margin-bottom: 10px;
+        }
+        #result {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .feedback {
+            font-size: 1.2em;
+        }
+        #background-animation {
+        position: fixed;
+      top: 0;
+       left: 0;
+      width: 100%;
+     height: 100%;
+     z-index: -1; /* Keep it behind all content */
+     overflow: hidden;
+    background: #fff; /* White background */
+}
+
+/* SVG Animation */
+#red {
+  fill: none;
+  opacity: 0.15;
+  stroke: #CE1B5F;
+  stroke-width: 12;
+  stroke-miterlimit: 10;
+  animation: moveLeft 6s infinite ease-in-out, scaleUp 8s infinite ease-in-out, rotateRed 8s infinite linear;
+}
+
+#blue {
+  fill: none;
+  opacity: 0.15;
+  stroke: #06A1C4;
+  stroke-width: 12;
+  stroke-miterlimit: 10;
+  animation: moveRight 6s infinite ease-in-out, scaleDown 8s infinite ease-in-out, rotateBlue 8s infinite linear;
+}
+
+#light-blue {
+  fill: none;
+  opacity: 0.15;
+  stroke: #06A1C4;
+  stroke-width: 6;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 200;
+  stroke-dashoffset: 800;
+  animation: draw 4s infinite ease-in-out, pulseLightBlue 6s infinite ease-in-out;
+}
+
+/* Animations */
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(-200px);
+    opacity: 0.15;
+  }
+  50% {
+    transform: translateX(0);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateX(-200px);
+    opacity: 0.15;
+  }
+}
+
+@keyframes moveRight {
+  0% {
+    transform: translateX(200px);
+    opacity: 0.15;
+  }
+  50% {
+    transform: translateX(0);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateX(200px);
+    opacity: 0.15;
+  }
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+    opacity: 0.15;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.15;
+  }
+}
+
+@keyframes scaleDown {
+  0% {
+    transform: scale(1);
+    opacity: 0.15;
+  }
+  50% {
+    transform: scale(0.8);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.15;
+  }
+}
+
+@keyframes rotateRed {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateBlue {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes pulseLightBlue {
+  0% {
+    opacity: 0.15;
+    stroke: #06A1C4;
+  }
+  50% {
+    opacity: 0.6;
+    stroke: #80E0F0; /* Lightened blue */
+  }
+  100% {
+    opacity: 0.15;
+    stroke: #06A1C4;
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0.15;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0.15;
+  }
+}
+
+/* Style for website content */
+.content {
+  text-align: center;
+  margin-top: 20vh;
+  color: #333; /* Dark gray text for contrast */
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.0rem;
+}
+        
+    </style>
+</head>
+
+<body>
+    
+</body>
+</html>
+
+    <header id="header">
+        <header>
+            <div class="header-content">
+              <h1>Delhi Public School</h1>
+              <div class="logo-container">
+                <img src="dpslogo-removebg-preview.png" alt="School Logo" class="school-logo">
+              </div>
+            </div>
+          
+            <nav>
+              <ul id="nav-menu">
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#principal-message">Principal's Message</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#activities">Activities</a></li>
+                <li><a href="#gallery">Photo Gallery</a></li>
+                <li><a href="#facts">Facts</a></li>
+                <li><a href="#Schoolkaquiz">School Quiz</a></li>
+                <li><a href="#conclusion">Conclusion</a></li>
+              </ul>
+            </nav>
+          </header>
+          
+          
+    </header>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <div class="about-container">
+            <img src="dpsgate.png" alt="St. Xavier's School" style="height: 500px; border-radius: 8px; margin-bottom: 20px;">
+            <div>
+
+                <p>
+                    Delhi Public School Ranchi aims to make learning fun-filled, enjoyable and contemporary in today's context, keeping in mind our rich Indian values. Fostering character building and nurturing the inquisitive spirit of children, encouraging scientific temperament and strengthening social bonds are our constant endeavours. Surging ahead with a spirit of healthy competition, balancing a successful career teamed with a contented life is the gift we give to our children. With a perfect collaboration between the students, parents, teachers and management we ensure that education provides ample opportunities for self fulfilment.
+                </p>
+                <button onclick="toggleReadMore()">Read More</button>
+
+
+                <div id="more" style="display:none;">
+                    <h3>History</h3>
+                    <p>
+                        Delhi Public School Ranchi embarked on its navigationem ad consequi excellentiam” on 1st July 1989 in the SAIL Township of Ranchi which is marked for its sprawling lush greenery and fertile outlook. A co-educational English medium Senior Secondary School recognized by the Directorate of Education under All India 10+2 pattern in all science, commerce and humanities streams. It is scaling high under the aegis of the Delhi Public School Society, New Delhi; a brainchild of illustrious and distinguished educationists and philanthropists.
+                    </p>
+                    <h3>Academic Excellence and Global Perspective-</h3>
+                    <p>
+                        The school fosters motivated and academically curious global citizens by being a passionate, purposeful and progressive place to study. Our pupils transpire to achieve exceptional examination results in both academic and competitive categories and ensure entrance to a vast array of not only the country’s but the world’s most celebrated colleges/universities.
+                    </p>
+                    <h3>Sociable and Inclusive Learning Environment-</h3>
+                    <p>
+                        The school’s sociable and inclusive nature is characterised by the way in which pupils support each-other at daily peer-led events. They are upskilled by appreciating and learning from the knowledge and experience of those around them and to engage with current, political, scientific, cultural and academic developments within a safe and open environment.
+
+                    </p>
+                    <h3>Innovative Educational Ecosystem-</h3>
+                    <p>
+                        Renowned as the pioneer of innovations in the educational ecosystem, DPS Ranchi is a highly academic school where individual and institutional excellence are strived for and encouraged in an atmosphere of open-minded enquiry without dogma, prejudice and unthinking conformity.
+                    </p>
+                    <h3>Extracurricular Activities</h3>
+                    <p>
+                        Beyond the classroom, we stimulate the sundry range of hobbies and interests our students have with an exciting and extensive extra and co-curricular programme of events. Be it kaleidoscopic intra-mural House Activities (House-system) and Club Activities (School Clubs)or magnificent Inter-mural events, e.g., TERRA LAUREATE, DPS RANCHI PERITIA MODEL UNITED NATIONS CONFERENCE, COMMERCE FEST, AD MELIORA QUIZ CONTEST and many more. Showcasing brilliant team-spirit and sportsmanship, dipsites have broken records even in the field of sports, art and culture.
+                    </p>
+                    <h3>Institutional Support and Guidance-</h3>
+                    <p>
+                        Furthermore, the school has not only received ceaseless and unflinching support alongwith oracle guidance from the managing committee but has also been privileged to accrue blessings from the hon’ble Chairman of the DPSS, New Delhi  which ,consequently,  have helped in curating accomplishments.
+
+                       We strongly believe that strength of purpose achieves the impossible. And…
+
+                      “The highest peak hasn’t been climbed yet,
+                        The mightiest rivers aren’t spanned.”
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="principal-message" style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 20px; width: 100%;">
+    <h2>Principal's Message</h2>
+    <div class="principal-container" style="max-width: 800px;">
+        <img src="dps.png" alt="Principal" style="height: 500px; border-radius: 8px; margin-bottom: 20px;">
+        <p>
+            Warm Greetings! Welcome to Delhi Public School Ranchi. For three and a half decades, DPS Ranchi has been the beacon of excellence and powerhouse of learning. Our commitment to fostering a nurturing and dynamic learning environment has been unshakable over the years.
+        </p>
+        <p>
+            Our primary aim is to develop in the students qualities of integrity, honesty, tolerance, and compassion. Equally important and relevant is the need to promote a spirit of inquiry and to foster a scientific temper within the bonds of humanism.
+        </p>
+        <p>
+            We value the strong partnership between school and parents. Let us accept our responsibilities as ‘Parents’ at school and you as ‘Teachers’ at home.
+        </p>
+        <p>Dr. R. K. Jha<br><strong>The Principal</strong></p>
+    </div>
+</section>
+
+    <section id="events">
+        <h2>Events</h2>
+        <p>
+            At DPS-Ranchi , we celebrate a vibrant array of events throughout the academic year. These events not only enhance the educational experience but also foster a sense of community and school spirit among students, parents, and staff.
+        </p>
+        <div class="events-container">
+            <div class="event">
+                <a href="dpsstands.png" target="_blank">
+                    <img src="dpsstands.png" alt="Event 1">
+                </a>
+                <p>Investiture Ceremony 2024</p>
+            </div>
+        
+            <div class="event">
+                <a href="dpszeal.png" target="_blank">
+                    <img src="dpszeal.png" alt="Event 2">
+                </a>
+                <p>35th Foundation Day Celebrated with Zeal</p>
+            </div>
+        
+            <div class="event">
+                <a href="dpsteacher.png" target="_blank">
+                    <img src="dpsteacher.png" alt="Event 3">
+                </a>
+                <p>TEACHER'S DAY 2023 - CELEBRATION IN DPS RANCHI</p>
+            </div>
+        
+            <div class="event">
+                <a href="dpsbizgala.png" target="_blank">
+                    <img src="dpsbizgala.png" alt="Event 4">
+                </a>
+                <p>BIZGALA- Elevate, Innovate and Dominate</p>
+            </div>
+        
+            <div class="event">
+                <a href="dpsprize.png" target="_blank">
+                    <img src="dpsprize.png" alt="Event 5">
+                </a>
+                <p>DPS price Distribution</p>
+            </div>
+    
+        </div>
+        
+        <section id="activities">
+            <h2>Activities</h2>
+            <p>
+                The extracurricular activities at DPS-Ranchi are integral to our educational philosophy. These activities encourage students to explore their interests, develop new skills, and express their creativity.
+            </p>
+            <div class="activities-container">
+                <div class="event">
+                    <a href="dpsnews.png" target="_blank">
+                        <img src="dpsnews.png" alt="Activity 1">
+                    </a>
+                </div>
+        
+                <div class="activity">
+                    <a href="dpsgather.png" target="_blank">
+                        <img src="dpsgather.png" alt="Activity 2">
+                    </a>
+                </div>
+        
+                <div class="activity">
+                    <a href="dpsmusic.png" target="_blank">
+                        <img src="dpsmusic.png" alt="Activity 3">
+                    </a>
+                </div>
+        
+                <div class="activity">
+                    <a href="dpsdance.png" target="_blank">
+                        <img src="dpsdance.png" alt="Activity 4">
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="gallery">
+            <h2>School Photo Gallery</h2>
+            <p>
+                Explore some beautiful moments captured at DPS-Ranchi. Our photo gallery showcases the vibrant life and events of our school community.
+            </p>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <a href="dpsbuilding.png" target="_blank">
+                        <img src="dpsbuilding.png" alt="Gallery Image 1">
+                    </a>
+                </div>
+        
+                <div class="gallery-item">
+                    <a href="dpslab.png" target="_blank">
+                        <img src="dpslab.png" alt="Gallery Image 2">
+                    </a>
+                </div>
+        
+                <div class="gallery-item">
+                    <a href="dpsgroung.png" target="_blank">
+                        <img src="dpsgroung.png" alt="Gallery Image 3">
+                    </a>
+                </div>
+        
+                <div class="gallery-item">
+                    <a href="dpscourt.png" target="_blank">
+                        <img src="dpscourt.png" alt="Gallery Image 4">
+                    </a>
+                </div>
+        
+                <div class="gallery-item">
+                    <a href="dpsprice.png" target="_blank">
+                        <img src="dpsprice.png" alt="Gallery Image 5">
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+
+    <section id="facts">
+        <h2>Facts About Our School</h2>
+        <ul>
+            <li>DPS Ranchi is equipped with specialized laboratories for Physics, Chemistry, Biology, and Computer Science, allowing students to have hands-on learning experiences and explore practical applications of theoretical knowledge.</li>
+            <br /><br />
+
+            <li> The school places a strong emphasis on STEM (Science, Technology, Engineering, and Mathematics) education, encouraging students to explore careers in these fields through various projects, workshops, and competitions.
+            </li>
+            <br /><br />
+
+            <li>Currently, DPS Ranchi is home to over 500 students, reflecting its growth and popularity in the region.
+            </li>
+            <br /><br />
+
+            <li>DPS Ranchi offers an extensive sports program, with facilities for football, basketball, cricket, badminton, table tennis, and athletics. The school regularly participates in regional and national tournaments, and students often bring back medals.</li>
+            <br /><br />
+
+            <li>The school is highly committed to environmental sustainability. It promotes eco-friendly practices, such as waste management, rainwater harvesting, and tree plantation drives. DPS Ranchi has a strong eco-club that engages students in various green initiatives.
+            </li>
+            <br /><br />
+
+            <li>TERRA LAUREATE is an annual event held by the school, showcasing a blend of art, culture, and performing arts. The event serves as a platform for students to showcase their talents in various artistic fields like drama, music, dance, and fine arts.</li>
+            <br /><br />
+
+            <li>DPS Ranchi has an international reach and regularly collaborates with schools in countries like the USA, UK, and Singapore for academic exchanges, cultural programs, and joint projects, giving students exposure to global perspectives.</li>
+            <br /><br />
+
+            <li>The school integrates Information and Communication Technology (ICT) into its curriculum, ensuring that students are well-versed in the latest technological tools and resources. Digital classrooms and online learning platforms are actively used for enhanced learning experiences.
+            </li>
+            <br><br>
+            <li>DPS Ranchi offers a variety of leadership development programs through student councils, peer mentoring, and workshops on communication, problem-solving, and teamwork. These initiatives help students develop leadership qualities and social responsibility.</li>
+            <br> <br>
+        </ul>
+    </section>
+    
+    <div id="background-animation">
+        <svg width="100%" height="100%" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid meet">
+          <!-- Clip Path (optional) -->
+          <defs>
+            <clipPath id="cache">
+              <circle cx="400" cy="300" r="300"></circle>
+            </clipPath>
+          </defs>
+    
+          <!-- Animated Shapes with adjusted positions -->
+          <circle id="red" cx="150" cy="300" r="200"></circle>  <!-- Positioned left -->
+          <circle id="blue" cx="650" cy="300" r="250"></circle>  <!-- Positioned right -->
+          <circle id="light-blue" cx="400" cy="300" r="280"></circle> <!-- Centered -->
+        </svg>
+      </div>
+      
+</head>
+<body>
+
+    </head>
+    <body>
+    
+        <h1>DPS Ranchi Quiz</h1>
+
+        <form id="Schoolkaquiz">
+            <!-- Question 1 -->
+            <div class="question">
+                <label for="q1"><b>1. In which year was Delhi Public School (DPS) Ranchi established?</b></label>
+                <input type="radio" name="q1" value="1985" id="q1_1985"> <label for="q1_1985">a) 1985</label><br>
+                <input type="radio" name="q1" value="1989" id="q1_1989"> <label for="q1_1989">b) 1989</label><br>
+                <input type="radio" name="q1" value="1992" id="q1_1992"> <label for="q1_1992">c) 1992</label><br>
+                <input type="radio" name="q1" value="2000" id="q1_2000"> <label for="q1_2000">d) 2000</label>
+            </div>
+    
+            <!-- Question 2 -->
+            <div class="question">
+                <label for="q2"><b>2. Which stream is NOT offered at DPS Ranchi for Senior Secondary students?</b></label>
+                <input type="radio" name="q2" value="Science" id="q2_1"> <label for="q2_1">a) Science</label><br>
+                <input type="radio" name="q2" value="Commerce" id="q2_2"> <label for="q2_2">b) Commerce</label><br>
+                <input type="radio" name="q2" value="Arts" id="q2_3"> <label for="q2_3">c) Arts</label><br>
+                <input type="radio" name="q2" value="Medical" id="q2_4"> <label for="q2_4">d) Medical</label>
+            </div>
+    
+            <!-- Question 3 -->
+            <div class="question">
+                <label for="q3"><b>3. What is the name of the annual cultural event hosted by DPS Ranchi?</b></label>
+                <input type="radio" name="q3" value="TERRA LAUREATE" id="q3_1"> <label for="q3_1">a) TERRA LAUREATE</label><br>
+                <input type="radio" name="q3" value="DPS Peritia" id="q3_2"> <label for="q3_2">b) DPS Peritia</label><br>
+                <input type="radio" name="q3" value="Ad Meliora" id="q3_3"> <label for="q3_3">c) Ad Meliora</label><br>
+                <input type="radio" name="q3" value="DPS Carnival" id="q3_4"> <label for="q3_4">d) DPS Carnival</label>
+            </div>
+    
+            <!-- Question 4 -->
+            <div class="question">
+                <label for="q4"><b>4. What is the primary affiliation of DPS Ranchi?</b></label>
+                <input type="radio" name="q4" value="State Board" id="q4_1"> <label for="q4_1">a) State Board</label><br>
+                <input type="radio" name="q4" value="CBSE" id="q4_2"> <label for="q4_2">b) CBSE (Central Board of Secondary Education)</label><br>
+                <input type="radio" name="q4" value="IGCSE" id="q4_3"> <label for="q4_3">c) IGCSE</label><br>
+                <input type="radio" name="q4" value="ICSE" id="q4_4"> <label for="q4_4">d) ICSE</label>
+            </div>
+    
+            <!-- Question 5 -->
+            <div class="question">
+                <label for="q5"><b>5. DPS Ranchi is located in which township?</b></label>
+                <input type="radio" name="q5" value="Bokaro Township" id="q5_1"> <label for="q5_1">a) Bokaro Township</label><br>
+                <input type="radio" name="q5" value="SAIL Township" id="q5_2"> <label for="q5_2">b) SAIL Township</label><br>
+                <input type="radio" name="q5" value="HEC Township" id="q5_3"> <label for="q5_3">c) HEC Township</label><br>
+                <input type="radio" name="q5" value="Ranchi University Township" id="q5_4"> <label for="q5_4">d) Ranchi University Township</label>
+            </div>
+    
+            <!-- Question 6 -->
+            <div class="question">
+                <label for="q6"><b>6. Which of the following is a key focus of the school, aside from academics?</b></label>
+                <input type="radio" name="q6" value="Robotics competitions" id="q6_1"> <label for="q6_1">a) Robotics competitions</label><br>
+                <input type="radio" name="q6" value="Sports and extracurricular activities" id="q6_2"> <label for="q6_2">b) Sports and extracurricular activities</label><br>
+                <input type="radio" name="q6" value="Coding and software development" id="q6_3"> <label for="q6_3">c) Coding and software development</label><br>
+                <input type="radio" name="q6" value="Digital Marketing" id="q6_4"> <label for="q6_4">d) Digital Marketing</label>
+            </div>
+    
+            <button type="button" onclick="checkAnswers()">Submit</button>
+        </form>
+    
+        <div id="result"></div>
+    
+        <script>
+            function checkAnswers() {
+                let score = 0;
+                let totalQuestions = 6;
+                let feedback = "";
+                let unansweredQuestions = 0;
+    
+                // Getting the selected answers for each question
+                const answer1 = document.querySelector('input[name="q1"]:checked');
+                const answer2 = document.querySelector('input[name="q2"]:checked');
+                const answer3 = document.querySelector('input[name="q3"]:checked');
+                const answer4 = document.querySelector('input[name="q4"]:checked');
+                const answer5 = document.querySelector('input[name="q5"]:checked');
+                const answer6 = document.querySelector('input[name="q6"]:checked');
+    
+                // Check answers and provide feedback
+                const answers = [
+                    { question: answer1, correct: "1989", text: "Question 1" },
+                    { question: answer2, correct: "Medical", text: "Question 2" },
+                    { question: answer3, correct: "TERRA LAUREATE", text: "Question 3" },
+                    { question: answer4, correct: "CBSE", text: "Question 4" },
+                    { question: answer5, correct: "SAIL Township", text: "Question 5" },
+                    { question: answer6, correct: "Sports and extracurricular activities", text: "Question 6" }
+                ];
+    
+                answers.forEach(answer => {
+                    if (answer.question) {
+                        if (answer.question.value === answer.correct) {
+                            feedback += `<b>${answer.text}:</b> Correct!<br>`;
+                            score++;
+                        } else {
+                            feedback += `<b>${answer.text}:</b> Incorrect. Correct answer: ${answer.correct}<br>`;
+                        }
+                    } else {
+                        feedback += `<b>${answer.text}:</b> You didn't answer this question.<br>`;
+                        unansweredQuestions++;
+                    }
+                });
+    
+                const result = document.getElementById("result");
+                result.innerHTML = feedback + `<br><b>Your score:</b> ${score} out of ${totalQuestions}<br>`;
+    
+                if (unansweredQuestions > 0) {
+                    result.innerHTML += "<b>Please answer all questions to get your score.</b>";
+                } else if (score === totalQuestions) {
+                    result.innerHTML += "<b>Congratulations! You got all answers correct! :)</b>";
+                } else {
+                    result.innerHTML += "<b>Keep trying! You'll do better next time.</b>";
+                }
+            }
+        </script>
+    
+
+        
+<section id="conclusion">
+    <h2>Conclusion</h2>
+    <p>Our group exhibition project for our computer science subject focuses on creating a website using HTML, CSS, and JavaScript. We are developing a platform specifically for our school, which will showcase important information, events, and resources for students and staff. Through this project, we aim to demonstrate our understanding of web development principles while highlighting the importance of these technologies in building interactive and user-friendly websites. This collaborative effort will allow us to combine our skills and creativity to deliver a valuable resource for our school community.</p>
+    <br />
+
+    <p>Made by Student of DPS-Ranchi</p>
+    <br />
+    <p>Made by</p>
+    <ul>
+        <li><b><a href="mailto:nikitagupta@gmail.com">Nikita Gupta </a></li></b><br>
+        <li><b><a href="mailto:suhanagautam@gmail.com">Suhana Gautam </a></li></b><br>
+        <li><b><a href="mailto:saanvisahi@gmail.com">Saanvi Sahi </a></li></b><br>
+        <li><b><a href="mailto:shambhavisingh@gmail.com">Shambhavi Singh </a></li></b><br>
+    </ul>
+    <p>Made with &hearts;</p>
+    
+</section>
+
+
+
+<footer>
+    <p>&copy; 2024 DPS-Ranchi. All rights reserved.</p>
+    <br>
+    <a href="https://www.dpsranchi.com/?AspxAutoDetectCookieSupport=1">Main website</a>
+</footer>
+</div>
+    
+
+    <script>
+        function toggleReadMore() {
+            var moreText = document.getElementById("more");
+            if (moreText.style.display === "none") {
+                moreText.style.display = "block";
+            } else {
+                moreText.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
